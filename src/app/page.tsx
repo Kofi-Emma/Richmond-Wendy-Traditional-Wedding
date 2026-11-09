@@ -1,5 +1,5 @@
 import Image from "next/image";
-import monogram from "../../public/images/richmond-wendy-monogram.png";
+import monogram from "../../public/images/richmond-wendy-monogram.webp";
 import { weddingDetails } from "@/content/wedding";
 import styles from "./page.module.css";
 
@@ -50,7 +50,7 @@ export default function Home() {
                     strokeLinecap="round"
                   />
                 </svg>
-                {date.display}
+                <span>{date.display}</span>
               </span>
               <span className={styles.ceremonyDetail}>
                 <svg
@@ -75,7 +75,7 @@ export default function Home() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                {time.display}
+                <span>{time.display}</span>
               </span>
             </time>
           </div>
@@ -86,8 +86,11 @@ export default function Home() {
             Ceremony location
           </p>
           <address className={styles.address}>
-            <span>GhanaPostGPS</span>
-            {venue.address}
+            <span className={styles.addressLabel}>{venue.address.label}</span>
+            <span className={styles.streetAddress}>
+              <span>{venue.address.street}</span>
+              <span>{venue.address.postalCode}</span>
+            </span>
           </address>
           <p className={styles.locality}>{venue.locality}</p>
 

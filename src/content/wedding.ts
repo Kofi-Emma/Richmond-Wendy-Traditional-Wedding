@@ -22,7 +22,12 @@ export type WeddingDetails = {
     readonly abbreviation: string;
   };
   readonly venue: {
-    readonly address: string;
+    readonly address: {
+      readonly label: "GhanaPostGPS";
+      readonly street: string;
+      readonly postalCode: string;
+      readonly display: string;
+    };
     readonly locality: string;
     readonly coordinates: {
       readonly latitude: number;
@@ -53,7 +58,12 @@ export const weddingDetails = {
     abbreviation: "GMT",
   },
   venue: {
-    address: "7 SHAMROCK ST GA-536-0748",
+    address: {
+      label: "GhanaPostGPS",
+      street: "7 SHAMROCK ST",
+      postalCode: "GA-536-0748",
+      display: "7 SHAMROCK ST GA-536-0748",
+    },
     locality: "Dansoman, Accra",
     coordinates: {
       latitude: 5.563787,

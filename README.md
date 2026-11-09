@@ -19,9 +19,9 @@ All ceremony details, wedding colours, the hashtag, and the Google Maps URL are 
 
 [`src/content/wedding.ts`](src/content/wedding.ts)
 
-The transparent monogram artwork is stored at:
+The optimized transparent monogram artwork is stored at:
 
-[`public/images/richmond-wendy-monogram.png`](public/images/richmond-wendy-monogram.png)
+[`public/images/richmond-wendy-monogram.webp`](public/images/richmond-wendy-monogram.webp)
 
 ## Verification commands
 

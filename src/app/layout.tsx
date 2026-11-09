@@ -5,7 +5,7 @@ import "./globals.css";
 const { couple, event, date, time, venue, colours, hashtag } = weddingDetails;
 
 const title = `${couple.display} | ${event}`;
-const description = `${couple.first} and ${couple.second} invite you to their ${event.toLowerCase()} on ${date.display} at ${time.display} ${time.label}, at ${venue.address}, ${venue.locality}. ${hashtag}`;
+const description = `${couple.first} and ${couple.second} invite you to their ${event.toLowerCase()} on ${date.display} at ${time.display} ${time.label}, at ${venue.address.display}, ${venue.locality}. ${hashtag}`;
 
 export const metadata: Metadata = {
   title,
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     couple.first,
     couple.second,
     event,
-    venue.address,
+    venue.address.display,
     venue.locality,
     hashtag,
   ],
