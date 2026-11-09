@@ -114,7 +114,7 @@
   align-items: center;
   gap: 0.28rem;
   font-family: var(--body-font);
-  font-size: 0.9765rem;
+  font-size: 1.07415rem;
   font-weight: 700;
   line-height: 1.45;
   letter-spacing: 0.025em;
@@ -176,7 +176,7 @@
   flex-direction: column;
   gap: 0.3rem;
   margin: 0.9rem auto 0;
-  font-size: 0.9765rem;
+  font-size: 1.07415rem;
   font-style: normal;
   font-weight: 700;
   line-height: 1.45;
