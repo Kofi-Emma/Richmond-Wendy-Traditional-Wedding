@@ -137,6 +137,10 @@ export default function Home() {
             ))}
           </ul>
           <p className={styles.hashtag}>{hashtag}</p>
+          <span className="mb-6"></span>
+          <span className={styles.directionName}>
+            Directions & Details: 0242952572
+          </span>
         </footer>
       </main>
     </div>
